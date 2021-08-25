@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<header>
+    <h1 class="text-center text-light bg-secondary p-2">Make your choice</h1>
+</header>
+
+    <main class="container.fluid">
+        <div class="row p-4">
+            <div class= "col-md-4">
+                <div class="card rpsCard shadow align-items-center">
+                    <img src="https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Item_Hiding_Grazestone.png" alt="rock" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="text center">Rock</h3>
+                        <button onclick="play(0)">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class= "col-md-4">
+                <div class="card rpsCard shadow align-items-center">
+                    <img src="https://static.wikia.nocookie.net/play-rust/images/9/96/Paper_icon.png" alt="paper" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="text center">Paper</h3>
+                        <button onclick="play(1)">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class= "col-md-4">
+                <div class="card rpsCard shadow align-items-center">
+                    <img src="https://www.shareicon.net/data/128x128/2015/11/14/671808_tools_512x512.png" alt="scissors" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="text center">Scissors</h3>
+                        <button onclick="play(2)">Select</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row py-4">
+            <h1 class="text-center text-light bg-secondary p-2">Computer Choice</h1>
+        </div>
+        <div class="row p-4  display-flex align-items-center ">
+                <div class="col-md-6 computer-card " id="computerChoice"></div>
+                <div class="col-md-6 computer-card" id="messageArea"></div>
+        </div>
+    </div>
+    </main>
+        
+
+
+    <script src="app/main.js"></script>
+</body>
+</html>

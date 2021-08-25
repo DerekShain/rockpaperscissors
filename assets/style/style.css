@@ -1,0 +1,15 @@
+.rpsCard img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: top-center;
+}
+
+.computer-container {
+    display: flex;
+    justify-content: space-around;
+}
+.computer-card{
+    display: flex;
+    justify-content: center;
+}
